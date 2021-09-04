@@ -8,6 +8,9 @@ namespace MyOOP
         {
             Console.WriteLine("Hello World!");
 
+            string z = Enumerator.A.ToString();
+            Console.WriteLine(z);
+
             string a, b;
             a = "A";
             b = "B";
