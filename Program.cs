@@ -8,6 +8,15 @@ namespace MyOOP
         {
             Console.WriteLine("Hello World!");
 
+          
+            
+            Console.ReadLine();
+
+
+        }
+
+        static void TestCode()
+        {
             string z = Enumerator.A.ToString();
             Console.WriteLine(z);
 
@@ -15,12 +24,12 @@ namespace MyOOP
             a = "A";
             b = "B";
 
-            Console.WriteLine(a+ " " +b);
+            Console.WriteLine(a + " " + b);
 
             ValueReference.ChangeNames(ref a, ref b);
 
             Console.WriteLine("After Change >");
-            Console.WriteLine(a+ " "+b);
+            Console.WriteLine(a + " " + b);
 
             PersonClass person = new PersonClass();
             person.Name = "Mariam";
@@ -30,7 +39,7 @@ namespace MyOOP
             myDog.DogName = "Bitch";
             myDog.Bite();
 
-            
+
             //polymorphism
             Shapes[] shapes = new Shapes[4];
             shapes[0] = new Shapes();
@@ -38,18 +47,14 @@ namespace MyOOP
             shapes[2] = new Rectangles();
             shapes[3] = new Lines();
 
-            foreach(var shape in shapes)
+            foreach (var shape in shapes)
             {
                 shape.Draw();
             }
-            
+
 
 
             Console.WriteLine(myDog.DogName);
-            
-            Console.ReadLine();
-
-
         }
     }
 }
