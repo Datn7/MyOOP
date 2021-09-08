@@ -8,7 +8,9 @@ namespace MyOOP
         {
             Console.WriteLine("Hello World!");
 
-          
+            //delegates are bitchass references to methods, nothing fancy. as you thought. dumbfuck. <3
+            AboutShitInfoDelegate myDelegate = new AboutShitInfoDelegate(Delegates.DisplayInformation);
+            myDelegate.Invoke();
             
             Console.ReadLine();
 
